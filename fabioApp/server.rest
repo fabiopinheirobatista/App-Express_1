@@ -1,0 +1,20 @@
+###
+GET http://localhost:3000/admin
+###
+GET http://localhost:3000/usuarios/550
+###
+GET http://localhost:3000/admin/300
+###
+POST http://localhost:3000/admin
+Content-Type: application/
+
+{
+    "login":"fabiobatista",
+    "senha":"123456789"
+}
+### acessando via PATCH
+PATCH http://localhost:3000/admin/fabio
+### acessando via PUT
+PUT http://localhost:3000/admin/fabio
+### acessando via DELETE
+DELETE http://localhost:3000/admin/fabio
